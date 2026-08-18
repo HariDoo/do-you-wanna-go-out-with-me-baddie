@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en-IN" dir="ltr">
+  <head>
+    <title># Do you wanna go out with me badiee ?</title>
+    <meta charset="utf-8">
+    <meta name="author" content="Badiee"/>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+    <meta name="description" content="Do you wanna go out with me badiee? A cute date invite for the one I love."/>
+    <meta name="keywords" content="Do you wanna go out with me badiee,date invite,romantic proposal,Instagram profile,Badiee"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="image/icons/favicon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="image/icons/favicon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="image/icons/favicon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="image/icons/favicon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="image/icons/favicon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="image/icons/favicon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="image/icons/favicon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="image/icons/favicon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="image/icons/favicon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="image/icons/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="image/icons/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="image/icons/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="image/icons/favicon-192x192.png">
+    <link rel="shortcut icon" type="image/x-icon" href="image/icons/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="image/icons/favicon.ico">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="image/icons/favicon-144x144.png">
+    <meta name="msapplication-config" content="image/icons/browserconfig.xml">
+    <link rel="manifest" href="image/icons/manifest.json">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-3EWCZHDCG9"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-3EWCZHDCG9');
+    </script>
+  </head>
+  <body>
+    <div class="floating-hearts" aria-hidden="true">
+      <span>❤</span>
+      <span>♥</span>
+      <span>❤</span>
+      <span>♥</span>
+      <span>❤</span>
+      <span>♥</span>
+      <span>❤</span>
+      <span>♥</span>
+      <span>❤</span>
+      <span>♥</span>
+    </div>
+
+    <div class="sparkles" aria-hidden="true">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <audio id="heartbeatSound" preload="auto">
+      <source src="brvhrtz-heartbeat-02-225103.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="ask" class="container glass-panel">
+      <div class="header_wrap">
+        <span class="mini_tag">For you, my favorite person</span>
+        <h1 class="header_text">Do you wanna go out with me, badiee?</h1>
+      </div>
+
+      <div class="gif_container">
+        <img src="image/ask.gif" alt="Cute animated illustration">
+      </div>
+
+      <p class="date_prompt">I was hoping you’d say yes to a cute little date with me ❤️</p>
+
+      <div class="love_note">
+        <span class="note_heart">❤</span>
+        <span>Let’s make a memory together, one sweet date at a time.</span>
+      </div>
+
+      <div class="buttons">
+        <button class="btn" id="yesButton" onclick="nextPage()">Yes, let’s go</button>
+        <button class="btn" id="noButton" onmouseover="moveButton()" onmouseenter="moveButton()" onclick="moveButton()" ontouchstart="moveButton(event)">No</button>
+      </div>
+
+      <video id="novideo" width="0" height="0" controls>
+        <source src="image/SadMoment.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <div id="ans" class="container glass-panel">
+      <div>
+        <h1 class="header_text">Yeeeyyyy!!</h1>
+      </div>
+
+      <div class="gif_container">
+        <img src="image/ans.gif" alt="Cute animated illustration">
+      </div>
+
+      <div class="profile_card">
+        <div class="profile_avatar">H</div>
+        <div class="profile_details">
+          <span class="profile_label">My Instagram</span>
+          <a href="https://www.instagram.com/hari_.do/" target="_blank" rel="noreferrer">@hari_.do</a>
+          <p>Let’s plan a date and make it unforgettable 😍</p>
+        </div>
+      </div>
+
+      <div class="love_note success_note">
+        <span class="note_heart">❤</span>
+        <span>I knew this would be the start of something beautiful.</span>
+      </div>
+
+      <form id="dateForm" class="date_form">
+        <label>
+          <span>Date</span>
+          <input type="date" id="dateInput" name="date" required>
+        </label>
+
+        <label>
+          <span>Food</span>
+          <select id="foodInput" name="food" required>
+            <option value="">Choose a food</option>
+            <option value="biryani">Biryani</option>
+            <option value="pizza">Pizza</option>
+            <option value="burgers">Burgers</option>
+            <option value="pasta">Pasta</option>
+            <option value="sushi">Sushi</option>
+            <option value="coffee and dessert">Coffee + dessert</option>
+            <option value="street food">Street food</option>
+            <option value="anything cute and cozy">Anything cute and cozy</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Time</span>
+          <input type="time" id="timeInput" name="time" required>
+        </label>
+
+        <button type="submit" class="profile_button submit_button">Send date idea</button>
+      </form>
+
+      <video id="ansvideo" width="0" height="0" controls>
+        <source src="image/KidsCheering.mp4" type="video/mp4">
+      </video>
+    </div>
+
+    <script>
+      function playAudio() {
+        document.getElementById('novideo').play();
+      }
+
+      function playHeartbeatTone() {
+        var sound = document.getElementById('heartbeatSound');
+        if (!sound) return;
+        sound.currentTime = 0;
+        sound.play();
+      }
+
+      function nextPage() {
+        var burst = document.createElement('div');
+        burst.className = 'heart-burst';
+        burst.innerHTML = '❤❤❤';
+        document.body.appendChild(burst);
+
+        setTimeout(function () {
+          burst.remove();
+        }, 800);
+
+        document.getElementById('ans').style.display = 'block';
+        document.getElementById('ask').style.display = 'none';
+        document.getElementById('novideo').pause();
+        document.getElementById('ansvideo').play();
+      }
+
+      document.getElementById('dateForm')?.addEventListener('submit', function (event) {
+        event.preventDefault();
+
+        var date = document.getElementById('dateInput').value;
+        var food = document.getElementById('foodInput').value;
+        var time = document.getElementById('timeInput').value;
+
+        if (!date || !food || !time) {
+          alert('Please choose a date, food, and time first.');
+          return;
+        }
+
+        var formattedDate = new Date(date + 'T00:00:00');
+        var dateLabel = formattedDate.toLocaleDateString(undefined, {
+          month: 'short',
+          day: 'numeric',
+          year: 'numeric'
+        });
+
+        var message = 'Hey Hari, I’d love to go on a date with you on ' + dateLabel + ' at ' + time + '. I’m thinking ' + food + '. Does that work for you? 😍';
+        var encodedMessage = encodeURIComponent(message);
+        var whatsappLink = 'https://wa.me/9176189467?text=' + encodedMessage;
+
+        window.open(whatsappLink, '_blank');
+      });
+
+      function moveButton(event) {
+        if (event && event.preventDefault) {
+          event.preventDefault();
+        }
+
+        var noButton = document.getElementById('noButton');
+        var yesButton = document.getElementById('yesButton');
+        var padding = 20;
+        var maxX = Math.max(padding, window.innerWidth - noButton.offsetWidth - padding);
+        var maxY = Math.max(padding, window.innerHeight - noButton.offsetHeight - padding);
+        var x = Math.random() * maxX;
+        var y = Math.random() * maxY;
+
+        noButton.style.left = `${x}px`;
+        noButton.style.top = `${y}px`;
+        noButton.style.transform = 'translate(0, 0)';
+
+        yesButton.classList.remove('dramatic');
+        void yesButton.offsetWidth;
+        yesButton.classList.add('dramatic');
+
+        if (yesButton.textContent === "Yes, let’s go") {
+          yesButton.textContent = "Please think about it...";
+        } else if (yesButton.textContent === "Please think about it...") {
+          yesButton.textContent = "Don’t you love me?";
+        } else if (yesButton.textContent === "Don’t you love me?") {
+          yesButton.textContent = "I’ll bite you if you don’t 😜";
+        } else {
+          yesButton.textContent = "Yes, let’s go";
+        }
+
+        noButton.textContent = 'No';
+
+        playHeartbeatTone();
+      }
+    </script>
+  </body>
+</html>
+
